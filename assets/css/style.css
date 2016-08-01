@@ -160,6 +160,14 @@
      }
  }
  /*Home Pagina*/
+
+#img-home{
+    margin-top: 20px;
+    background-image: "../photos/logo-bw.png"
+    
+    
+}
+
  /* Heren Pagina */
  
  .table th {
