@@ -161,10 +161,14 @@
  }
  /*Home Pagina*/
 
-#img-home{
-    margin-top: 20px;
-    background-image: "../photos/logo-bw.png"
+#imgHome{
     
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    display: inline-block;
+    border: 1px solid #ddd;
+    border-radius: 4px;
     
 }
 
