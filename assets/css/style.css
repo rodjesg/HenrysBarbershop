@@ -171,6 +171,13 @@
     border-radius: 4px;
     
 }
+.fb-pageBorder{
+    padding: 20px;
+    margin: 5px;
+    color: green;
+    border: 1px solid red;
+    
+}
 
  /* Heren Pagina */
  
