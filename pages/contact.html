@@ -58,39 +58,41 @@
         <!-- Google Maps
 ================================================== -->
         <br>
-        <div id="googleMap"></div>
+        <div id="googleMap">
 
-        <!-- Add Google Maps -->
-        <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyAs_vrby0s5Zwz21sqSUu0r0ehrMSDQVVY&callback=initMap"></script>
-        <script>
-            var myLocation = new google.maps.LatLng(51.567383, 5.090145);
+            <!-- Add Google Maps -->
+            <script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyAs_vrby0s5Zwz21sqSUu0r0ehrMSDQVVY&callback=initMap"></script>
+            <script>
+                var myLocation = new google.maps.LatLng(51.567383, 5.090145);
 
-            function initialize() {
-                var mapProp = {
-                    center: myLocation,
-                    zoom: 15,
-                    scrollwheel: false,
-                    draggable: false,
-                    mapTypeId: google.maps.MapTypeId.ROADMAP
-                };
+                function initialize() {
+                    var mapProp = {
+                        center: myLocation,
+                        zoom: 15,
+                        scrollwheel: false,
+                        draggable: false,
+                        mapTypeId: google.maps.MapTypeId.ROADMAP
+                    };
 
-                var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+                    var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
 
-                var marker = new google.maps.Marker({
-                    position: myLocation,
-                });
+                    var marker = new google.maps.Marker({
+                        position: myLocation,
+                    });
 
-                marker.setMap(map);
-            }
+                    marker.setMap(map);
+                }
 
-            google.maps.event.addDomListener(window, 'load', initialize);
+                google.maps.event.addDomListener(window, 'load', initialize);
 
-        </script>
+            </script>
+        </div>
         <!-- Adres 
 ===============================================-->
         <br>
-
-        <address>
+        <div class="row specs-t§able">
+            <div class="col-md-6">
+                <address>
   <strong>Henry's Barbershop</strong><br>
   Molenstraat 77 <br>
   5014 NC Tilburg, Noord Brabant, NL <br>
@@ -98,13 +100,24 @@
   <abbr title="Phone">M:</abbr> (0031) 6 16 39 6227
 </address>
 
-        <address>
+                <address>
   <strong>Henry Castillo</strong><br>
   <a href="mailto:henrysbarbershop@hotmail.com">henrysbarbershop@hotmail.com</a>
 </address>
 
+            </div>
 
 
+            <div class="col-md-6">
+                <strong>Openingstijden</strong>
+                <div>Maandag / Lunes: 12:00 - 17:00 ( Op afpsraak / con cita previa) </div>
+                <div>Dinsdag / Martes: 10:00 - 18:00</div>
+                <div>Woensdag / Miércoles: 12:00 17:00</div>
+                <div>Donderdag / Jueves: 10:00 - 21:00</div>
+                <div>Vrijdag / Viernes: 10:00 - 18:00 </div>
+                <div>Zaterdag / Sábado: 10:00 - 18:00</div>
+            </div>
+        </div>
 
         <!-- Site footer -->
         <footer class="footer">
