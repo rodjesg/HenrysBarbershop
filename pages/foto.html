@@ -12,6 +12,8 @@
     <script src="../assets/js/jquery-1.11.3.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="../assets/js/bootstrap.min.js"></script>
+    <!-- Instagram -->
+    <script type="text/javascript" src="../assets/js/instafeed.min.js"></script>
 
     <!-- font awesome icons -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
@@ -56,6 +58,19 @@
         </div>
         <p> Binnenkort / Próximamente </p>
 
+        <div id="instafeed">
+
+            <script type="text/javascript">
+                var feed = new Instafeed({
+                    get: 'user',
+                    userId: 'YOUR_USER_ID',
+                    accessToken: 'YOUR_ACCESS_TOKEN'
+                });
+                feed.run();
+
+            </script>
+
+        </div>
         <!-- Site footer -->
         <footer class="footer">
             <p>&copy; Henry's Barbershop.</p>
@@ -67,6 +82,7 @@
 
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+
 </body>
 
 </html>
